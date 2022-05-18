@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: "monolith"
+spec:
+# There's a selector which is used to automatically find and expose any pods with the labels app: monolith and secure: enabled.
+  selector:
+    app: "monolith"
+    secure: "enabled"
+# Now you have to expose the nodeport here because this is how you'll forward external traffic from port 31000 to nginx (on port 443).
+  ports:
+    - protocol: "TCP"
+      port: 443
+      targetPort: 443
+      nodePort: 31000
+  type: NodePort
