@@ -18,6 +18,7 @@ spec:
         - name: "tls-certs"
           mountPath: "/etc/tls"
     - name: monolith
+    # image from dockerhub https://hub.docker.com/r/kelseyhightower/monolith
       image: "kelseyhightower/monolith:1.0.0"
       ports:
         - name: http
