@@ -305,3 +305,5 @@ Note:It might take a minute for the external IP address to be generated. Run the
 ```bash
 curl -k https://<EXTERNAL-IP>
 ```
+
+[>sumber belajar<](https://www.cloudskillsboost.google/focuses/557?parent=catalog)
