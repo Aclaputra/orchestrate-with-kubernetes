@@ -9,7 +9,7 @@ gcloud container clusters create io
 ```
 
 ## get the samples code
-Clone the GitHub repository from the Cloud Shell command line:
+Clone the GitHub repository from the Cloud Shell CLI:
 ```bash
 gsutil cp -r gs://spls/gsp021/* .
 ```
